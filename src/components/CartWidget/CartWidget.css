@@ -1,0 +1,31 @@
+
+  
+.cart-container {
+    
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+   
+  }
+  
+  .cart-image {
+    width: 40px; 
+    height: auto; 
+    margin: 0 auto; 
+  }
+  
+ 
+  .cart-badge {
+    background-color: #ff5722; 
+    color: #fff; 
+    font-size: 10px; 
+    padding: 5px 10px; 
+    border-radius: 50%; 
+    margin: 5px auto;
+    width: fit-content; 
+    z-index:2;
+    margin-top: -48px;
+    margin-left:35px
+  }
+  
+  
