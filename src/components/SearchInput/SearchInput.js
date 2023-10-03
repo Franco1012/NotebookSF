@@ -1,12 +1,13 @@
 import React from 'react'
 import './SearchInput.css'
 
-const SearchInput = () => {
+const SearchInput = ({placeholder}) => {
     return (
-
-        <input className='search-input' type="text" placeholder="Buscar..." />
-
-
-    )
-}
+      <input
+        className='search-input'
+        type="text"
+        placeholder={placeholder}
+      />
+    );
+  };
 export default SearchInput

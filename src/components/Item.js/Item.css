@@ -1,0 +1,26 @@
+.card {
+    width: 300px; /* Ancho de la tarjeta */
+    padding: 20px; /* Espaciado interno de la tarjeta */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #fff; /* Fondo blanco */
+  }
+  .card-titulo {
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  /* Estilo para el contenido de la tarjeta */
+  .card-descripcion {
+    font-size: 1rem; /* Tamaño de fuente del contenido */
+  }
+  
+  /* Estilo para un botón dentro de la tarjeta */
+  
+  
+  
+  
+  
+  
+    

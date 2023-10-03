@@ -1,0 +1,17 @@
+.mi-cuenta-button {
+    background-color: #cdeee3; 
+    color: #070606; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+  }
+  
+  .mi-cuenta-button:hover {
+   
+    background-color: #0056b3; 
+  }
+  
+  
+  
