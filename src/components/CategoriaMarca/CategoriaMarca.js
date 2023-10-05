@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
-import { productos } from '../ProductosData/ProductosData'
+/*import { productos } from '../ProductosData/ProductosData'*/
 import Item from '../Item.js/Item'
 import './CategoriaMarca.css'
+import { ProductContext } from '../../ProductContext'
+
 
 
 const CategoriaMarca = () => {
+    const productos=useContext(ProductContext)
     const { marca } = useParams();
     const marcaSeleccionada = productos.filter(producto => producto.marca === marca);
     console.log(marcaSeleccionada)

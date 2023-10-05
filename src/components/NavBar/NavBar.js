@@ -5,13 +5,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
 import FilterButton from '../FilterButton/FilterButton';
 import SearchInput from '../SearchInput/SearchInput';
-import './NavBar.css';
 import MyAccount from '../MyAccount/MyAccount';
 import { Link } from 'react-router-dom';
+import './NavBar.css';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary p-3 navbar">
+    <Navbar expand="lg" className=" p-3 navbar">
       <Container>
         <Navbar.Brand as={Link} to='/'>NoteBookSF</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
