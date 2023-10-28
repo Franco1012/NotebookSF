@@ -5,7 +5,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
 import FilterButton from '../FilterButton/FilterButton';
 import SearchInput from '../SearchInput/SearchInput';
-import MyAccount from '../MyAccount/MyAccount';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
@@ -28,7 +27,6 @@ function NavBar() {
           <SearchInput placeholder="Buscar" />
         </Navbar.Collapse>
       </Container>
-      <MyAccount />
       <CartWidget />
     </Navbar>
   );

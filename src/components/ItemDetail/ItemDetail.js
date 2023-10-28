@@ -9,11 +9,11 @@ import { ProductContext } from '../../ProductContext';
 const ItemDetail = () => {
   const productos=useContext(ProductContext)
   const { id } = useParams();
-  const productoSeleccionado = productos.find(producto => producto.id === id)
+  const productoSeleccionado = productos.docs.find(producto => producto.id === id)
 
   if (productoSeleccionado) {
     return (
-      <div className='item-detail'> <Item producto={productoSeleccionado} /></div>
+      <div className='item-detail container'> <Item id={id}  producto={productoSeleccionado.data()} mostrarBotonAgregar={true} className={'card'} /></div>
      
     )
   }

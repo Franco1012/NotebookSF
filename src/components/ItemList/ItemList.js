@@ -8,9 +8,9 @@ const ItemList = () => {
   const productos=useContext(ProductContext)
   return (
     <div className='item-list'>
-      {productos.map((producto) => (
-        <NavLink key={producto.id} to={`/${producto.id}`} className='product-link'>
-          <Item producto={producto} />
+      {productos.docs.map((producto) => (
+        <NavLink key={producto.id} to={`/${producto.id}`} className='nav-link'>
+          <Item producto={producto.data()} mostrarBotonAgregar={false} className={'card'} />
         </NavLink>
       ))}
     </div>

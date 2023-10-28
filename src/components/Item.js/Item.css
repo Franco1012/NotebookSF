@@ -22,5 +22,26 @@
   
   
   
+  .card-horizontal {
+    display: flex; /* Mostrar en línea horizontal */
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    width:80%; /* Ancho de la tarjeta */
+    margin: 2rem;
+    padding: 20px; /* Espaciado interno de la tarjeta */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #fff; /* Fondo blanco */
+
+  }
+  .card-horizontal img {
+    max-width: 100px; /* Ancho máximo de la imagen */
+    margin-right: 20px; /* Espaciado derecho entre la imagen y el contenido */
+  }
   
-    
+  /* Estilo para el contenido de la tarjeta */
+  .card-horizontal .card-descripcion {
+    font-size: 1rem; /* Tamaño de fuente del contenido */
+  }

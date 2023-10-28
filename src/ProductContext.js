@@ -1,40 +1,29 @@
 import React, { createContext, useState, useEffect } from 'react';
+import { collection, getDocs, getFirestore } from 'firebase/firestore';
 
 const ProductContext = createContext();
 
 const ProductProvider = ({ children }) => {
   const [productos, setProductos] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+ 
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch('/productos.json')
-        .then((response) => response.json())
-        .then((data) => {
-          setProductos(data);
-          setIsLoading(false);
-        })
-        .catch((error) => {
-          setIsLoading(false);
-          console.error('Error al cargar los productos:', error);
-        });
-    }, 3000); // Espera 3 segundos antes de cargar los datos
+    const db = getFirestore();
+    const itemCollection = collection(db, 'items');
+    getDocs(itemCollection)
+      .then((res) => {
 
+       setProductos(res)
+       console.log(productos)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
-  const loadingStyles = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '24px', // Puedes ajustar el tamaño de la fuente según tus preferencias
-    height: '100vh', // Esto centra verticalmente el texto en la pantalla completa
-  };
+
   return (
     <ProductContext.Provider value={productos}>
-      {isLoading ? (
-        <div style={loadingStyles}>Cargando...</div>
-      ) : (
-        children
-      )}
+      {children}
     </ProductContext.Provider>
   );
 };
