@@ -10,7 +10,7 @@ const ItemListContainer = ({ texto }) => {
   return (
     <div className='container'>
       <div className='greeting'>{texto}</div>
-      <ItemList/>
+      <ItemList />
     </div>
 
   )

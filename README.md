@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# E-commerce NotebookSF
+Esta es una aplicación de comercio electrónico desarrollada en React que te permite explorar una lista de productos, ver detalles de los productos, agregar productos al carrito de compras, eliminar productos del carrito y crear una orden de compra. La aplicación utiliza Firebase como base de datos para almacenar los datos de productos y las órdenes de compra.
+# Funcionalidades
+Explora Productos: Navega a través de una lista de productos disponibles,también se puede seleccionar por marca de producto.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Detalles del Producto: Haz clic en un producto para ver detalles, incluyendo imagen, descripción y precio.
 
-## Available Scripts
+Añade al Carrito: Desde la vista de detalles del producto, puedes agregar la cantidad deseada al carrito.
 
-In the project directory, you can run:
+Gestiona el Carrito: En la página del carrito, puedes revisar los productos agregados, actualizar la cantidad o eliminar productos.
 
-### `npm start`
+Crea una Orden: Después de revisar los productos en tu carrito, puedes proceder a la creación de una orden. Completa un formulario con tus datos personales, y una vez confirmada la compra, recibirás un número de orden.
+# Tecnologías Utilizadas
+React: La aplicación está construida utilizando la biblioteca de React para crear interfaces de usuario interactivas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Firebase: Se utiliza Firebase como base de datos en tiempo real para almacenar y gestionar la información de productos y órdenes de compra.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React Router: React Router se emplea para la navegación dentro de la aplicación y para permitir que los usuarios vean los detalles de los productos y el carrito.
 
-### `npm test`
+# Ejecutar comandos
+#  npm install
+#  npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Autor
+Este proyecto fue creado por Franco Soler.

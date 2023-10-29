@@ -1,0 +1,23 @@
+
+.orden-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.message-box {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.message-text {
+  font-size: 18px;
+  color: #333;
+}

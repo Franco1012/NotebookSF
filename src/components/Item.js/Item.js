@@ -3,32 +3,36 @@ import './Item.css'
 import { CartContext } from '../../CartContext';
 
 
-const Item = ({ id,producto, mostrarBotonAgregar,mostrarBotonEliminar, mostrarCantidadSubtotal,className}) => {
+const Item = ({ producto, mostrarBotonAgregar, mostrarBotonEliminar, mostrarCantidadSubtotal, mostrarDescripcion, className }) => {
 
-  const { agregarProducto,eliminarProducto } = useContext(CartContext)
+  const { agregarProducto, eliminarProducto } = useContext(CartContext)
 
   return (
 
     <div className={className}>
-      <img src={producto.img} alt="img"/>
+      <img src={producto.img} alt="img" />
       <h2>{producto.marca}</h2>
+      {!mostrarDescripcion ? (
+        <p className='card-descripcion'>{producto.descripcion}</p>
+      ) : null
+      }
       <h2 className='card-titulo'>${producto.precio}</h2>
-      <p className='card-descripcion'>{producto.descripcion}</p>
-
-      {mostrarBotonAgregar ? (
-        <button onClick={() => agregarProducto(producto,id)}>Agregar al carrito</button>
-
-      ) : null}
-      {mostrarBotonEliminar? (
-        <button onClick={()=>eliminarProducto(producto)} >Eliminar</button>
-
-      ) : null}
-      { mostrarCantidadSubtotal?(
+      {mostrarCantidadSubtotal ? (
         <div>
           <p>Cantidad:{producto.cantidad}</p>
           <p>Subtotal: {producto.subtotal}</p>
         </div>
-      ):null}
+      ) : null}
+
+      {mostrarBotonAgregar ? (
+        <button className='cart-create-order-link' onClick={() => agregarProducto(producto)}>Agregar al carrito</button>
+
+      ) : null}
+      {mostrarBotonEliminar ? (
+        <button className='cart-empty-button' onClick={() => eliminarProducto(producto)} >Eliminar</button>
+
+      ) : null}
+
 
     </div>
   );
