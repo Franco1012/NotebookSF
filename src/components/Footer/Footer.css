@@ -1,0 +1,14 @@
+.footer {
+    min-height: 10vh;
+    background-color: #333;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del texto al centro */
+    width: 100%;
+    /* Ancho del pie de página al 100% del contenedor */
+    bottom: 0;
+}

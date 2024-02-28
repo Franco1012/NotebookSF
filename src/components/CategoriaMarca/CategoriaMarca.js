@@ -12,7 +12,7 @@ const CategoriaMarca = () => {
 
 
     if (loading) {
-        return ( 
+        return (
             <div className='item-list'>
                 <p>Cargando productos...</p>
             </div>
@@ -28,9 +28,14 @@ const CategoriaMarca = () => {
     return (
         <div className='categoria-marca container'>
             {marcaSeleccionada.map((producto) => (
-                <NavLink key={producto.id} to={`/productos/${marca}/${producto.id}`} className='nav-link'>
-                    <Item producto={producto} mostrarBotonAgregar={false} mostrarDescripcion={true} className={'card'} />
-                </NavLink>
+                <Item producto={producto} mostrarBotonAgregar={false} mostrarDescripcion={true} className={'card'}>
+                    <NavLink key={producto.id} to={`/productos/${marca}/${producto.id}`} className='nav-link'>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <button className='cart-create-order-link'>Ver detalle</button>
+                        </div>
+                    </NavLink>
+                </Item>
+
             ))}
         </div>
     );

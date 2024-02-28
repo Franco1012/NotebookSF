@@ -20,9 +20,17 @@ const ItemList = () => {
   return (
     <div className='item-list'>
       {productos.map((producto) => (
-        <NavLink key={producto.id} to={`/${producto.id}`} className='nav-link'>
-          <Item producto={producto} mostrarBotonAgregar={false} mostrarDescripcion={true} className={'card'} />
-        </NavLink>
+        <div>
+          <Item producto={producto} mostrarBotonAgregar={false} mostrarDescripcion={true} className={'card'} >
+            <NavLink key={producto.id} to={`/${producto.id}`} className='nav-link'>
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <button className='cart-create-order-link'>Ver detalle</button>
+              </div>
+            </NavLink>
+          </Item>
+
+        </div>
+
       ))}
     </div>
   );

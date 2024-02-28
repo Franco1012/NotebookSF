@@ -3,7 +3,7 @@ import './Item.css'
 import { CartContext } from '../../CartContext';
 
 
-const Item = ({ producto, mostrarBotonAgregar, mostrarBotonEliminar, mostrarCantidadSubtotal, mostrarDescripcion, className }) => {
+const Item = ({ producto, mostrarBotonAgregar, mostrarBotonEliminar, mostrarCantidadSubtotal, mostrarDescripcion, className, children }) => {
 
   const { agregarProducto, eliminarProducto } = useContext(CartContext)
 
@@ -33,7 +33,7 @@ const Item = ({ producto, mostrarBotonAgregar, mostrarBotonEliminar, mostrarCant
 
       ) : null}
 
-
+      {children}
     </div>
   );
 }

@@ -12,6 +12,7 @@ import { ProductProvider } from './ProductContext';
 import CartItems from './components/CartItems/CartItems';
 import { CartProvider } from './CartContext';
 import Checkout from './components/Checkout/Checkout';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -34,7 +35,10 @@ function App() {
             </Routes>
           </ProductProvider>
         </CartProvider>
+        <Footer/>
       </BrowserRouter>
+      
+      
     </div>
   );
 

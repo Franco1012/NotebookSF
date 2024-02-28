@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
 import FilterButton from '../FilterButton/FilterButton';
+import InputBuscar from '../InputBuscar/InputBuscar';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
@@ -22,10 +23,14 @@ function NavBar() {
               <FilterButton text={"Bgh"} />
               <FilterButton text={"Lenovo"} />
             </NavDropdown>
+            
           </Nav>
         </Navbar.Collapse>
+        <InputBuscar/> 
+        <CartWidget />
       </Container>
-      <CartWidget />
+     
+      
     </Navbar>
   );
 }
