@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 90vh; /* Ajusta el valor para dejar espacio para el footer */
 }
 
 .cart-items-option {
